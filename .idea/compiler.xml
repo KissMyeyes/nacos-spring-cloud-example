@@ -6,31 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="serviceB-service" />
+        <module name="lajsf-starter" />
         <module name="lajsf-manager" />
         <module name="nacos-spring-cloud-provider-example" />
-        <module name="maven-archiver (7)" />
-        <module name="serviceA-service" />
         <module name="serviceB-api" />
         <module name="serviceA-api" />
         <module name="nacos-spring-cloud-config-example" />
-        <module name="maven-archiver (2)" />
-        <module name="lajsf-starter" />
-        <module name="maven-archiver (1)" />
-        <module name="lajsf-example-service" />
-        <module name="lajsf-example-manager" />
-        <module name="lajsf-example-api" />
-        <module name="maven-archiver (3)" />
-        <module name="maven-archiver (4)" />
-        <module name="lajsf-core" />
-        <module name="lajsf-component" />
-        <module name="maven-archiver (5)" />
         <module name="nacos-spring-cloud-consumer-example" />
-        <module name="maven-archiver (6)" />
+        <module name="lajsf-example-service" />
+        <module name="lajsf-example-api" />
+        <module name="lajsf-core" />
+        <module name="serviceB-service" />
+        <module name="lajsf-component" />
+        <module name="lajsf-example-manager" />
         <module name="serviceA-services" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="maven-archiver (1)" target="1.8" />
+      <module name="maven-archiver (2)" target="1.8" />
+      <module name="maven-archiver (3)" target="1.8" />
+      <module name="maven-archiver (4)" target="1.8" />
+      <module name="maven-archiver (5)" target="1.8" />
+      <module name="maven-archiver (6)" target="1.8" />
+      <module name="maven-archiver (7)" target="1.8" />
       <module name="serviceA-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -43,6 +42,10 @@
       <module name="lajsf-example-service" options="-parameters" />
       <module name="lajsf-manager" options="-parameters" />
       <module name="lajsf-starter" options="-parameters" />
+      <module name="serviceA-api" options="-parameters" />
+      <module name="serviceA-services" options="-parameters" />
+      <module name="serviceB-api" options="-parameters" />
+      <module name="serviceB-service" options="-parameters" />
     </option>
   </component>
 </project>

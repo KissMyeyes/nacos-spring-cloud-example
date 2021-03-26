@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.alibaba.nacos</groupId>
-        <artifactId>serviceA-parent</artifactId>
-        <version>0.2.0-SNAPSHOT</version>
+        <groupId>com.lajsf.pointspay</groupId>
+        <artifactId>serviceB-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,12 +14,20 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>com.lajsf.framework</groupId>
+            <artifactId>lajsf-starter</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-httpclient</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!--        excal 导入依赖-->
+        <dependency>
+            <groupId>com.lajsf.framework</groupId>
+            <artifactId>lajsf-component</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

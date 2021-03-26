@@ -3,142 +3,59 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>serviceA-parent</artifactId>
-        <groupId>com.alibaba.nacos</groupId>
-        <version>0.2.0-SNAPSHOT</version>
+        <groupId>com.lajsf.pointspay</groupId>
+        <artifactId>serviceB-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>serviceB-services</artifactId>
-    <properties>
-        <lajsf.framework.version>4.0-SNAPSHOT</lajsf.framework.version>
 
-        <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
-        <spring.cloud.version>Finchley.SR1</spring.cloud.version>
-        <!-- 第三方依赖版本 -->
-        <elasticjob.version>2.1.5</elasticjob.version>
-        <curator.version>2.10.0</curator.version>
-
-        <druid.version>1.1.10</druid.version>
-        <swagger.version>2.9.2</swagger.version>
-        <jetcache.version>2.5.2</jetcache.version>
-        <mybatis.plus.version>3.1.1</mybatis.plus.version>
-        <mybatis.plus.typehandlers.version>1.0.2</mybatis.plus.typehandlers.version>
-        <mybatis.plus.generator.version>3.1.1</mybatis.plus.generator.version>
-        <guava.version>20.0</guava.version>
-        <logstash-logback.version>4.11</logstash-logback.version>
-
-        <velocity.version>1.7</velocity.version>
-        <bouncycastle.version>1.54</bouncycastle.version>
-        <spring-kafka.version>2.1.10.RELEASE</spring-kafka.version>
-
-        <poi-ooxml.version>3.17</poi-ooxml.version>
-        <feign-form-spring.version>3.4.1</feign-form-spring.version>
-
-        <fastjson.version>1.2.70</fastjson.version>
-        <skywalking.version>6.0.0-GA</skywalking.version>
-        <jsoup.version>1.11.3</jsoup.version>
-
-        <dubbo-spring-boot.version>2.7.6</dubbo-spring-boot.version>
-        <zkclient.version>0.1</zkclient.version>
-        <spring-cloud-openfeign.version>2.0.0.RELEASE</spring-cloud-openfeign.version>
-        <spring-cloud-netflix.version>2.0.0.RELEASE</spring-cloud-netflix.version>
-    </properties>
 
     <dependencies>
-
         <dependency>
-            <groupId>com.alibaba.nacos</groupId>
+            <groupId>com.lajsf.pointspay</groupId>
+            <artifactId>serviceB-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lajsf.pointspay</groupId>
             <artifactId>serviceA-api</artifactId>
-            <version>0.2.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lajsf.framework</groupId>
+            <artifactId>lajsf-starter</artifactId>
+        </dependency>
+        <!--Excel导入依赖yryz-component-->
+        <dependency>
+            <groupId>com.lajsf.framework</groupId>
+            <artifactId>lajsf-component</artifactId>
         </dependency>
 
-
+        <!--        excel需要引用这个包-->
+        <dependency>
+            <groupId>com.lajsf.pointspay</groupId>
+            <artifactId>support-api</artifactId>
+        </dependency>
+        <!--Excel导入依赖poi-ooxml-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.2.2.RELEASE</version>
+            <groupId>com.dangdang</groupId>
+            <artifactId>elastic-job-lite-spring</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba.nacos</groupId>
-            <artifactId>nacos-client</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>0.2.1.RELEASE</version>
-        </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--        </dependency>-->
-<!--        DB-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis.plus.version}</version>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.mybatis</groupId>-->
-<!--            <artifactId>mybatis-typehandlers-jsr310</artifactId>-->
-<!--            <version>${mybatis.plus.typehandlers.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.baomidou</groupId>-->
-<!--            <artifactId>mybatis-plus-generator</artifactId>-->
-<!--            <version>${mybatis.plus.generator.version}</version>-->
-<!--        </dependency>-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.47</version>
-        </dependency>
-
-        <!-- velocity -->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.velocity</groupId>-->
-<!--            <artifactId>velocity</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.bouncycastle</groupId>-->
-<!--            <artifactId>bcpkix-jdk15on</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba</groupId>-->
-<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
-<!--            <version>${druid.version}</version>-->
-<!--        </dependency>-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <!-- lettuce连接池 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-            <version>${spring-cloud-netflix.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>${spring-cloud-openfeign.version}</version>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$/serviceA" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceA/serviceA-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceA/serviceA-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceB/serviceB-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/serviceB/serviceB-service" charset="UTF-8" />
     <file url="file://D:/IDEA_workSpace_yyjh/framework-backend" charset="UTF-8" />
     <file url="file://D:/IDEA_workSpace_yyjh/framework-backend/lajsf-component" charset="UTF-8" />
     <file url="file://D:/IDEA_workSpace_yyjh/framework-backend/lajsf-core" charset="UTF-8" />
