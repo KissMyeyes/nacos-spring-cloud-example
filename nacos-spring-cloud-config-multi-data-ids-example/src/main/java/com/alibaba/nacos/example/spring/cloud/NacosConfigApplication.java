@@ -13,7 +13,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class UserApplication {
+public class NacosConfigApplication {
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
@@ -25,7 +25,7 @@ public class UserApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(NacosConfigApplication.class, args);
     }
 }
 
