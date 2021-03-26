@@ -35,11 +35,19 @@ public class NacosConsumerApplication {
         private final RestTemplate restTemplate;
 
         @Autowired
-        public TestController(RestTemplate restTemplate) {this.restTemplate = restTemplate;}
+        public TestController(RestTemplate restTemplate) {
+            this.restTemplate = restTemplate;
+        }
 
         @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
         public String echo(@PathVariable String str) {
             return restTemplate.getForObject("http://service-provider/echo/" + str, String.class);
+        }
+
+
+        @RequestMapping(value = "/feign/{str}")
+        public String feign(@PathVariable String str) {
+            return restTemplate.getForObject("http://serviceA/1.0/pv/serviceA/get?kid=" + str, String.class);
         }
     }
 }

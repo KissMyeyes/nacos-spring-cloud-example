@@ -6,11 +6,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="serviceB-service" />
+        <module name="lajsf-manager" />
         <module name="nacos-spring-cloud-provider-example" />
-        <module name="nacos-spring-cloud-config-multi-data-ids-example" />
+        <module name="maven-archiver (7)" />
+        <module name="serviceA-service" />
+        <module name="serviceB-api" />
+        <module name="serviceA-api" />
         <module name="nacos-spring-cloud-config-example" />
+        <module name="maven-archiver (2)" />
+        <module name="lajsf-starter" />
+        <module name="maven-archiver (1)" />
+        <module name="lajsf-example-service" />
+        <module name="lajsf-example-manager" />
+        <module name="lajsf-example-api" />
+        <module name="maven-archiver (3)" />
+        <module name="maven-archiver (4)" />
+        <module name="lajsf-core" />
+        <module name="lajsf-component" />
+        <module name="maven-archiver (5)" />
         <module name="nacos-spring-cloud-consumer-example" />
+        <module name="maven-archiver (6)" />
+        <module name="serviceA-services" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="serviceA-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lajsf-component" options="-parameters" />
+      <module name="lajsf-core" options="-parameters" />
+      <module name="lajsf-example-api" options="-parameters" />
+      <module name="lajsf-example-manager" options="-parameters" />
+      <module name="lajsf-example-service" options="-parameters" />
+      <module name="lajsf-manager" options="-parameters" />
+      <module name="lajsf-starter" options="-parameters" />
+    </option>
   </component>
 </project>

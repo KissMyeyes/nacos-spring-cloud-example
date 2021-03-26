@@ -8,6 +8,14 @@
         <option value="$PROJECT_DIR$/nacos-spring-cloud-config-example/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-spring-cloud-discovery-example/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-spring-cloud-config-multi-data-ids-example/pom.xml" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/pom.xml" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-core/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-example/lajsf-example-api/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-example/lajsf-example-manager/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-example/lajsf-example-service/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-manager/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-starter/target/maven-archiver/pom.properties" />
+        <option value="D:/IDEA_workSpace_yyjh/framework-backend/lajsf-component/target/maven-archiver/pom.properties" />
       </list>
     </option>
   </component>
